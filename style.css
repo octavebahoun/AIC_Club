@@ -74,6 +74,7 @@ header {
   padding: 80px 0;
   text-align: center;
   animation: fadeInUp 0.8s ease-out;
+  
 }
 
 .hero h1 {
@@ -839,9 +840,11 @@ body {
 
 .future-card {
     background: white;
-    padding: 2rem;
+    font-size: medium;
+    padding: 1rem;
     border-radius: 12px;
     text-align: center;
+    justify-content: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
@@ -851,7 +854,7 @@ body {
 }
 
 .future-icon {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -873,7 +876,7 @@ body {
 /* Section collaboration */
 .collaboration-section {
     padding: 5rem 0;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #004080 100%);
+   background: linear-gradient(135deg, var(--color-primary) 0%, #004080 100%);
     color: white;
 }
 
@@ -942,6 +945,11 @@ body {
     text-align: center;
 }
 
+
+.active{
+    background: var(--color-secondary);
+  color: var(--color-text-light);
+}
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -991,3 +999,94 @@ body {
         gap: 1rem;
     }
 }
+
+
+.team-carousel {
+  max-width: 1200px;
+  margin: 30px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-carousel h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  height: 30rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.team-member {
+  min-width: 300px; /* Largeur d’un membre visible */
+  margin: 0 15px;
+  height: 28rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #3498db;
+  transition: transform 0.3s;
+}
+
+.team-member img:hover {
+  transform: scale(1.1);
+}
+
+.team-member h3 {
+  margin: 10px 0 5px 0;
+  color: #3498db;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+button.prev:hover, button.next:hover {
+  background: #2c80b4;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
