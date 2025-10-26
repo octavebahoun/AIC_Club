@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejoignez-nous - Ambitious & Innovation Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- =======================
+          HEADER
+  ======================== -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <svg width="150" height="50" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#21808d;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#32b8c6;stop-opacity:1" />
+              </linearGradient>
+              <filter id="shadow">
+                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3" />
+              </filter>
+            </defs>
+            <text x="15" y="33" font-family="Arial, sans-serif" font-size="32" font-weight="bold"
+              fill="url(#gradient)" filter="url(#shadow)" letter-spacing="3">AIC</text>
+          </svg>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="#">Valeurs</a>
+          <a href="project.html">Projets</a>
+          <a href="about.html">À propos</a>
+          <a href="rejoindre.html" class="active">Rejoignez-nous</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================
+          SECTION REJOINDRE
+  ======================== -->
+  <section class="join-section">
+    <div class="container">
+      <div class="join-content">
+        <h2>Rejoignez l'Aventure AIC 🚀</h2>
+        <p class="intro">
+          Vous êtes passionné(e) par la technologie, ambitieux(se) et prêt(e) à vous investir dans des projets innovants ? 
+          Rejoignez notre communauté de bâtisseurs.
+        </p>
+
+        <div class="join-grid">
+          <!-- Pourquoi nous rejoindre -->
+          <div class="join-block">
+            <h3>🎯 Pourquoi nous rejoindre ?</h3>
+            <ul>
+              <li>Travailler sur des projets technologiques concrets et innovants</li>
+              <li>Développer vos compétences dans un environnement stimulant</li>
+              <li>Participer à des compétitions et hackathons nationaux et internationaux</li>
+              <li>Bénéficier de mentorat et de formations continues</li>
+              <li>Intégrer un réseau de professionnels et d'experts</li>
+            </ul>
+          </div>
+
+          <!-- Profils recherchés -->
+          <div class="join-block">
+            <h3>👥 Profils recherchés</h3>
+            <div class="profiles-grid">
+              <div class="profile-card">
+                <h4>💻 Développeurs</h4>
+                <p>Front-end, Back-end, Mobile, IA</p>
+              </div>
+              <div class="profile-card">
+                <h4>🔐 Cybersécurité</h4>
+                <p>Pentesting, Sécurité réseau, Cryptographie</p>
+              </div>
+              <div class="profile-card">
+                <h4>🤖 Robotique</h4>
+                <p>Automatisation, IoT, Systèmes embarqués</p>
+              </div>
+              <div class="profile-card">
+                <h4>🎨 Designers</h4>
+                <p>UI/UX, Graphisme, Expérience utilisateur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de candidature -->
+        <div class="application-form">
+          <h3>📝 Postuler maintenant</h3>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Prénom *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nom *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="domain">Domaine d'expertise *</label>
+              <select id="domain" name="domain" required>
+                <option value="">Sélectionnez votre domaine</option>
+                <option value="dev">Développement</option>
+                <option value="cyber">Cybersécurité</option>
+                <option value="robotique">Robotique</option>
+                <option value="design">Design</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="experience">Expérience (années)</label>
+              <input type="number" id="experience" name="experience" min="0" max="50">
+            </div>
+            
+            <div class="form-group">
+              <label for="motivation">Lettre de motivation *</label>
+              <textarea id="motivation" name="motivation" rows="6" 
+                        placeholder="Pourquoi souhaitez-vous rejoindre AIC ? Quelles sont vos ambitions ?..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="portfolio">Portfolio/LinkedIn/GitHub (optionnel)</label>
+              <input type="url" id="portfolio" name="portfolio" placeholder="https://">
+            </div>
+            
+            <button type="submit" class="btn submit-button">Envoyer ma candidature</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================
+          FOOTER
+  ======================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>© 2025 Ambitious & Innovation Center. Tous droits réservés.</p>
+      <div class="footer-socials">
+        <a href="#">LinkedIn</a>
+        <span>&bull;</span>
+        <a href="#">GitHub</a>
+        <span>&bull;</span>
+        <a href="#">X (Twitter)</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

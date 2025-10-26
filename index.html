@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing AIC </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div><svg width="150" height="50" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#21808d;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#32b8c6;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="shadow">
+                                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3" />
+                            </filter>
+                        </defs>
+
+                        <text x="15" y="33" font-family="Arial, sans-serif" font-size="32" font-weight="bold"
+                            fill="url(#gradient)" filter="url(#shadow)" letter-spacing="3">AIC</text>
+                    </svg>
+
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="project.html">Projets</a>
+                    <a href="about.html">A propos</a>
+                    <a href="rejoindre.html">Rejoignez-nous</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Construire avec discipline.<br>Innover avec ambition.</h1>
+                    <p class="subtitle">Ambitious & Innovation Center est un collectif d'ingénieurs et de créatifs
+                        dédiés à la conception de solutions technologiques qui façonnent l'avenir.</p>
+                    <a href="rejoindre.html"><button class="btn">Rejoignez Ambitious</button></a>
+                </div>
+                <div class="hero-image">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================
+             3. SECTION VALEURS
+        ======================== -->
+    <section id="values" class="values-section">
+        <div class="container">
+            <h2>Nos Valeurs Fondamentales</h2>
+            <div class="values-grid">
+                <!-- Valeur 1 -->
+                <div class="value-card">
+                    <h3>Discipline</h3>
+                    <p>La rigueur est le fondement de toute grande réalisation. Nous codons avec précision, méthode et
+                        constance.</p>
+                </div>
+                <!-- Valeur 2 -->
+                <div class="value-card">
+                    <h3>Innovation</h3>
+                    <p>Nous repoussons les limites pour transformer les idées audacieuses en réalités tangibles et
+                        utiles.</p>
+                </div>
+                <!-- Valeur 3 -->
+                <div class="value-card">
+                    <h3>Travail</h3>
+                    <p>L'effort soutenu et la collaboration sont les moteurs de notre succès. Nous croyons à la force du
+                        collectif.</p>
+                </div>
+                <!-- Valeur 4 -->
+                <div class="value-card">
+                    <h3>Impact</h3>
+                    <p>Nous ne créons pas seulement pour la technologie, nous visons un impact positif et durable sur
+                        notre écosystème.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote">
+        <div class="container">
+            <div class="quote-content">
+                <p class="quote-text">Nos Projets Stratégiques</p>
+                <a href="project.html"><button class="quote-author cta-btn">Voir nos projets</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section  -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-text">
+                    <h3>Découvrez notre équipe</h3>
+                    <p>Rencontrez les esprits brillants derrière nos innovations et découvrez comment nous transformons
+                        les idées en réalité.</p>
+                </div>
+                <button class="cta-btn" onclick="contact()">Contactez-nous</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form class="contact-form" action="" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <!-- =======================
+         6. FOOTER (Pied de page)
+    ======================== -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 Ambitious & Innovation Center. Tous droits réservés.</p>
+            <div class="footer-socials">
+                <a href="#">LinkedIn</a>
+                <span>&bull;</span>
+                <a href="#">GitHub</a>
+                <span>&bull;</span>
+                <a href="#">X (Twitter)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function contact() {
+            const contactSection = document.querySelector('.contact-section');
+            contactSection.style.display = contactSection.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>
