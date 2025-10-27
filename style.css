@@ -4,8 +4,8 @@
   --color-secondary: #d4af37;
   --color-text: #333;
   --color-text-light: #ffffff;
-  --color-bg: #ffffff;
-  --color-bg-alt: #f4f7f6;
+  --color-bg: #ffffff8e;
+  --color-bg-alt: #f4f7f6a4;
   --font-main: 'Inter', sans-serif;
 }
 
@@ -19,7 +19,6 @@
 
 body {
   line-height: 1.6;
-  background: var(--color-bg);
   color: var(--color-text);
 }
 
@@ -69,11 +68,12 @@ header {
 
 /* === Hero Section === */
 .hero {
-  background: var(--color-primary);
   color: var(--color-text-light);
   padding: 80px 0;
   text-align: center;
   animation: fadeInUp 0.8s ease-out;
+    background: var(--color-primary);
+  background-size: cover;
   
 }
 
@@ -135,7 +135,7 @@ header {
 
 /* === Citation === */
 .quote {
-  background: #e5e7eb;
+  background: #e5e7ebd2;
   padding: 5rem 0;
   text-align: center;
 }
@@ -154,7 +154,15 @@ header {
 
 /* === CTA === */
 .cta {
-  background: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 4rem 2rem;
+  text-align: center;
+    background: var(--color-primary);
+  background-size: cover;
+}
+
+.cta1{
+    background: var(--color-primary);
   color: var(--color-text-light);
   padding: 4rem 2rem;
   text-align: center;
@@ -163,6 +171,8 @@ header {
 .cta h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+    background: var(--color-primary);
+  background-size: cover;
 }
 
 .cta-btn {
@@ -510,22 +520,58 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =======================
    STYLES SPECIFIQUES PROJETS
 ======================== */
 
 /* Hero Section Projets */
 .projects-hero {
-    background: linear-gradient(135deg, var(--color-primary) 0%, #004080 100%);
     color: var(--color-text-light);
     padding: 100px 0 80px;
     text-align: center;
+      background: var(--color-primary);
+  background-size: cover;
 }
 
 .projects-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 800;
+   
 }
 
 .projects-hero .subtitle {
@@ -663,7 +709,7 @@ body {
 }
 
 .tech-tag {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.781);
     color: var(--color-primary);
     padding: 0.3rem 0.8rem;
     border-radius: 12px;
@@ -696,12 +742,12 @@ body {
 }
 
 .status.prototype {
-    background: #fff3e0;
+    background: #fff3e0c0;
     color: #f57c00;
 }
 
 .status.launched {
-    background: #e8f5e8;
+    background: #e8f5e8a9;
     color: #2e7d32;
 }
 
@@ -770,7 +816,7 @@ body {
     flex: 1;
     text-align: center;
     padding: 0.5rem;
-    background: #f0f0f0;
+    background: #f0f0f0ad;
     border-radius: 8px;
     font-size: 0.8rem;
 }
@@ -839,7 +885,7 @@ body {
 }
 
 .future-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.699);
     font-size: medium;
     padding: 1rem;
     border-radius: 12px;
@@ -876,8 +922,9 @@ body {
 /* Section collaboration */
 .collaboration-section {
     padding: 5rem 0;
-   background: linear-gradient(135deg, var(--color-primary) 0%, #004080 100%);
     color: white;
+      background: var(--color-primary);
+  background-size: cover;
 }
 
 .collaboration-content {
@@ -1019,7 +1066,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
-  background: #f4f4f4;
+  background: #f4f4f49f;
   padding: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   height: 30rem;
@@ -1037,7 +1084,7 @@ body {
   min-width: 300px; /* Largeur d’un membre visible */
   margin: 0 15px;
   height: 28rem;
-  background: #fff;
+  background: #ffffffa6;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
